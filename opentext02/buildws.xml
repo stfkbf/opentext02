@@ -9,19 +9,17 @@
 
   <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
    <classpath>
-    <pathelement location="./lib/webservices-tools.jar"/>
+    <pathelement location="lib/webservices-tools.jar"/>
   </classpath>
   </taskdef>
 
   <target name="wsdl"
-        description="generate the Java stubs" >
-    <!-- Create the distribution directory -->
-    <mkdir dir="${src}/dk/stfkbf/opentext/api"/>	
+        description="generate the Java stubs" >	
      
     <wsimport
 	wsdl="wsdl/DocumentManagement.wsdl"
 	wsdllocation="http://sd1kappuy11:8080/les-services/services/DocumentManagement?wsdl"
-	sourcedestdir="${src}/dk/stfkbf/opentext/api"
+	sourcedestdir="${src}"
 	xendorsed="true"
 	keep="true"
 	debug="true"/>
@@ -30,6 +28,6 @@
   <target name="clean"
         description="clean up" >
     <!-- Delete the ${build} and ${dist} directory trees -->
-    <delete dir="${src}/dk/stfkbf/opentext/api/*.*"/>
+    <delete dir="${src}/com/opentext"/>
   </target>
 </project>

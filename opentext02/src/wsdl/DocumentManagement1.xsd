@@ -2,7 +2,7 @@
   <xs:element name="OTAuthentication" type="tns:OTAuthentication" />
   <xs:complexType name="OTAuthentication">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="1" name="AuthenticationToken" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="AuthenticationToken" type="xs:string" /> 
     </xs:sequence>
   </xs:complexType>
 </xs:schema>

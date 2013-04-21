@@ -17,7 +17,7 @@
         description="generate the Java stubs" >
     <!-- Create the distribution directory -->
     <mkdir dir="${src}/dk/stfkbf/opentext/api"/>	
-    
+     
     <wsimport
 	wsdl="wsdl/DocumentManagement.wsdl"
 	wsdllocation="http://sd1kappuy11:8080/les-services/services/DocumentManagement?wsdl"

@@ -2,5 +2,12 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/webservices-tools.jar"/>
+	<classpathentry kind="lib" path="lib/stax-api.jar"/>
+	<classpathentry kind="lib" path="lib/webservices-api.jar"/>
+	<classpathentry kind="lib" path="lib/webservices-extra-api.jar"/>
+	<classpathentry kind="lib" path="lib/webservices-extra.jar"/>
+	<classpathentry kind="lib" path="lib/webservices-rt.jar"/>
+	<classpathentry kind="lib" path="lib/wstx-services.war"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
